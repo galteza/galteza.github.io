@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriel Pascua Alteza | Nagoya University</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/car.png" type="image/png">
+</head>
+<body class="lang-en">
+  <main class="hub-card">
+    <div class="card-banner">
+      <button id="lang-toggle" type="button" aria-label="Switch language">日本語 / English</button>
+    </div>
+
+    <div class="card-body">
+      <div class="profile-avatar">
+        <img src="assets/profile.jpg" alt="Gabriel Pascua Alteza">
+      </div>
+
+      <header class="identity">
+        <h1>Gabriel Pascua Alteza</h1>
+        <p class="name-katakana">アルテザ・ガブリエル・パスクア</p>
+      </header>
+
+      <!-- ENGLISH VIEW -->
+      <section class="content-block" data-lang="en">
+        <p class="research-focus">
+          Autonomous Vehicle Controls &bull; Safety Verification &bull; Motion Planning
+        </p>
+
+        <div class="affiliation">
+          <p class="role">Graduate Student Researcher</p>
+          <p>Mobility Systems Group (Suzuki &amp; Okuda Lab)</p>
+          <p>Graduate School of Engineering, Dept. of Mechanical Systems Engineering</p>
+          <p><strong>Nagoya University</strong></p>
+        </div>
+
+        <div class="meta-details">
+          <div class="meta-row">
+            <span class="meta-label">Email</span>
+            <a href="mailto:alteza.gabriel.pascua.m5@s.mail.nagoya-u.ac.jp">alteza.gabriel.pascua.m5@s.mail.nagoya-u.ac.jp</a>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Lab Address</span>
+            <span>Engineering Bldg. No. 2, Rm. 215, Furo-cho, Chikusa-ku, Nagoya, Aichi 464-8603, Japan</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- JAPANESE VIEW -->
+      <section class="content-block" data-lang="jp">
+        <p class="research-focus">
+          研究分野：自動運転の安全性検証・最適軌道計画・制御バリア関数
+        </p>
+
+        <div class="affiliation">
+          <p class="role">名古屋大学大学院 工学研究科 機械システム工学専攻 博士前期課程</p>
+          <p><strong>モビリティシステムズグループ（鈴木・奥田研究室）</strong></p>
+        </div>
+
+        <div class="meta-details">
+          <div class="meta-row">
+            <span class="meta-label">メール</span>
+            <a href="mailto:alteza.gabriel.pascua.m5@s.mail.nagoya-u.ac.jp">alteza.gabriel.pascua.m5@s.mail.nagoya-u.ac.jp</a>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">研究室</span>
+            <span>〒464-8603 愛知県名古屋市千種区不老町 名古屋大学 工学部2号館 215号室</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ACTION LINKS (Shared across both languages) -->
+      <nav class="link-actions" aria-label="Primary links">
+        <a class="action-btn" href="https://github.com/galteza" target="_blank" rel="noopener noreferrer">
+          <img src="assets/github.png" alt="" aria-hidden="true">
+          <span>GitHub</span>
+        </a>
+
+        <a class="action-btn" href="https://www.linkedin.com/in/altezagabriel/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/linkedin.webp" alt="" aria-hidden="true">
+          <span>LinkedIn</span>
+        </a>
+
+        <a class="action-btn action-btn-primary" href="mailto:alteza.gabriel.pascua.m5@s.mail.nagoya-u.ac.jp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          <span data-lang="en">Email</span>
+          <span data-lang="jp">メールを送る</span>
+        </a>
+      </nav>
+    </div>
+  </main>
+
+  <script>
+    const toggleBtn = document.getElementById('lang-toggle');
+    toggleBtn.addEventListener('click', () => {
+      const isEn = document.body.classList.toggle('lang-en');
+      document.documentElement.lang = isEn ? 'en' : 'ja';
+    });
+  </script>
+</body>
+</html>
